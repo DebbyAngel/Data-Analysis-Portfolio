@@ -10,12 +10,13 @@ With multiple campaigns, channels, and segments, it's challenging to pinpoint wh
 - Highlight high-performing locations and target audiences.
 
 ## Dataset & Setup
-- **Dataset:** `marketing_campaign_dataset_cleaned.csv` (after Excel-based cleaning)  
+- **Raw File Name:** `marketing_campaign_dataset_csv` (Original dataset with “days” in `Duration`, `$` in `Acquisition_Cost`, etc.)  
+- **Cleaned File Name:** `Marketing_campaign_dataset_cleaned.csv` (Prepared for PostgreSQL)  
 - **Data Cleaning (Excel):**  
-  - Removed “days” in the `Duration` column.  
-  - Stripped `$` and commas in `Acquisition_Cost` to ensure a numeric format.  
-  - Standardized the `Date` column for consistent date formats.  
-  - No missing values remained.  
+  - Removed “days” from `Duration`.  
+  - Stripped `$`/`,` in `Acquisition_Cost` and converted it to a numeric format.  
+  - Standardized the `Date` column for consistent date handling.  
+  - Confirmed no missing values remained after cleaning.  
 - **Database:** **PostgreSQL** for running SQL queries.
 
 ## SQL Tasks & Queries
@@ -39,10 +40,10 @@ With multiple campaigns, channels, and segments, it's challenging to pinpoint wh
 SQL queries in **PostgreSQL** revealed clear top performers in ROI and CTR, valuable geographic insights, and opportunities to optimize budget allocation. Focusing on cost-effective campaigns and high-CTR channels can significantly improve marketing outcomes.
 
 ## Files in This Folder
-- 'marketing_campaign_dataset.csv' (Raw dataset)
-- `marketing_campaign_dataset_cleaned.csv` (Cleaned dataset)
-- `Marketing_SQL_Analysis_Report.pdf` (Detailed SQL report)
-- `Marketing_SQL_Tasks.zip` (SQL scripts or queries)
+- `marketing_campaign_dataset_csv` (Raw dataset)  
+- `Marketing_campaign_dataset_cleaned.csv` (Cleaned dataset for SQL)  
+- `Marketing_SQL_Analysis_Report.pdf` (Detailed SQL report)  
+- `Marketing_SQL_Tasks.zip` (SQL scripts or queries)  
 
 ## Tools Used
 - **Excel**: for data cleaning (removing “days,” `$`, standardizing dates)  
