@@ -9,16 +9,23 @@ Marketing teams often struggle to identify which channels, locations, and custom
 - Identify high-performing locations.
 - Pinpoint customer segments with higher conversion rates.
 
-## Dataset
-- **Raw File Name:** `marketing_campaign_dataset_csv` (Original dataset with “days” in Duration, `$` in Acquisition_Cost, etc.)
-- **File Name:** `marketing_campaign_dataset_cleaned.csv`
-- **Description:** Contains campaign information (Campaign_Type, Target_Audience, Duration, Channel_Used, Conversion_Rate, Acquisition_Cost, ROI, Clicks, Impressions, etc.).  
-- **Data Cleaning (Python):**  
-  - Removed “days” from `Duration`.  
-  - Stripped `$`/`,` from `Acquisition_Cost` and converted it to float.  
-  - Standardized `Date` column to a consistent format.  
-  - Created `CTR` = (Clicks / Impressions) * 100 and `CPC` = Acquisition_Cost / Clicks.  
-  - Verified no missing values remained.
+## Dataset & Files (Hosted on Google Drive)
+All files for this project—raw dataset, cleaned dataset, PDF report, and slides—are located in a shared Google Drive folder:
+
+[**Click here to access Project 2 files**](https://drive.google.com/drive/folders/1zKJYCz3NYhQ3TnGB6-PYnJOrZeBLpmR0?usp=sharing)
+
+Inside that folder, you'll find:
+- **marketing_campaign_dataset_csv** (Raw dataset)  
+- **Marketing_campaign_dataset_cleaned.csv** (Cleaned dataset)  
+- **Marketing_Campaign_EDA.pdf** (Detailed PDF report)  
+- **Exploratory Data Analysis of Marketing Campaigns.pptx** (Presentation slides)
+
+## Data Cleaning (Python)
+- Removed “days” from `Duration`.  
+- Stripped `$`/`,` from `Acquisition_Cost` and converted it to float.  
+- Standardized the `Date` column to a consistent format.  
+- Created `CTR` = (Clicks / Impressions) * 100 and `CPC` = Acquisition_Cost / Clicks.  
+- Verified no missing values remained.
 
 ## EDA Steps
 1. **Data Loading & Inspection**  
@@ -26,10 +33,10 @@ Marketing teams often struggle to identify which channels, locations, and custom
 2. **Feature Engineering**  
    - Added `CTR` and `CPC` to measure engagement and cost-efficiency.
 3. **Visualizations & Insights**  
-   - ROI distribution (boxplot).  
-   - CTR by channel (barplot).  
-   - Conversion rate by customer segment (barplot).  
-   - ROI across locations (line plot).
+   - ROI distribution (boxplot)  
+   - CTR by channel (barplot)  
+   - Conversion rate by customer segment (barplot)  
+   - ROI across locations (line plot)
 
 ## Key Findings
 - **High CTR** on certain channels (e.g., Search Engine).  
@@ -43,14 +50,8 @@ Marketing teams often struggle to identify which channels, locations, and custom
 - **Tailor** campaigns to high-performing locations for greater impact.  
 - **Continuously monitor** CTR, CPC, and ROI to adapt to market changes.
 
-## Files in This Folder
-- 'marketing_campaign_dataset_csv' (Raw Dataset)
-- `Marketing_campaign_dataset_cleaned.csv` (Cleaned dataset)
-- `Marketing_Campaign_EDA_DebbyRise.pdf` (Detailed PDF report)
-- `Exploratory Data Analysis of Marketing Campaigns.pptx` (Presentation slides)
-  
 ## Tools & Libraries
-- **Python**: Pandas, Matplotlib, Seaborn
+- **Python**: Pandas, Matplotlib, Seaborn  
 - **Jupyter Notebook** (or similar IDE)
 
 ## Author
