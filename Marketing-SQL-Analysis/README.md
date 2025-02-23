@@ -9,15 +9,22 @@ With multiple campaigns, channels, and segments, it's challenging to pinpoint wh
 - Identify the most cost-effective campaigns and channels.
 - Highlight high-performing locations and target audiences.
 
-## Dataset & Setup
-- **Raw File Name:** `marketing_campaign_dataset_csv` (Original dataset with “days” in `Duration`, `$` in `Acquisition_Cost`, etc.)  
-- **Cleaned File Name:** `Marketing_campaign_dataset_cleaned.csv` (Prepared for PostgreSQL)  
-- **Data Cleaning (Excel):**  
-  - Removed “days” from `Duration`.  
-  - Stripped `$`/`,` in `Acquisition_Cost` and converted it to a numeric format.  
-  - Standardized the `Date` column for consistent date handling.  
-  - Confirmed no missing values remained after cleaning.  
-- **Database:** **PostgreSQL** for running SQL queries.
+## Dataset & Files (Hosted on Google Drive)
+All files for this project—raw dataset, cleaned dataset, SQL scripts, and final report—are located in the following Google Drive folder:
+
+[**Click here to access Project 3 files**](https://drive.google.com/drive/folders/1KAtlvYI3-Vvcbs2cI5FXJQDma7Vqr7fj?usp=sharing)
+
+Inside that folder, you'll find:
+- **marketing_campaign_dataset_csv** (Raw dataset)  
+- **Marketing_campaign_dataset_cleaned.csv** (Cleaned dataset)  
+- **Marketing_SQL_Analysis_Report.pdf** (Detailed SQL report)  
+- **Marketing_SQL_Tasks.zip** (SQL queries)
+
+## Data Cleaning (Excel)
+- Removed “days” from `Duration`.
+- Stripped `$`/`,` in `Acquisition_Cost` and converted it to a numeric format.
+- Standardized the `Date` column for consistent date handling.
+- Confirmed no missing values remained after cleaning.
 
 ## SQL Tasks & Queries
 1. **Total Impressions** per campaign  
@@ -38,12 +45,6 @@ With multiple campaigns, channels, and segments, it's challenging to pinpoint wh
 
 ## Conclusion
 SQL queries in **PostgreSQL** revealed clear top performers in ROI and CTR, valuable geographic insights, and opportunities to optimize budget allocation. Focusing on cost-effective campaigns and high-CTR channels can significantly improve marketing outcomes.
-
-## Files in This Folder
-- `marketing_campaign_dataset_csv` (Raw dataset)  
-- `Marketing_campaign_dataset_cleaned.csv` (Cleaned dataset for SQL)  
-- `Marketing_SQL_Analysis_Report.pdf` (Detailed SQL report)  
-- `Marketing_SQL_Tasks.zip` (SQL scripts or queries)  
 
 ## Tools Used
 - **Excel**: for data cleaning (removing “days,” `$`, standardizing dates)  
