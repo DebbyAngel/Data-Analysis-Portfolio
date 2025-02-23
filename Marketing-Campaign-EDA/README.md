@@ -1,52 +1,57 @@
-# Marketing SQL Analysis
+# Marketing Campaign EDA
 
 ## Project Overview
-This project applies SQL queries to a marketing campaign dataset to extract actionable insights. By leveraging **PostgreSQL**, we can quickly identify top-performing campaigns, cost-effective channels, and optimal target audiences.
+This project involves performing exploratory data analysis (EDA) on a marketing campaign dataset. The dataset includes metrics such as campaign types, ROI, clicks, impressions, CTR, CPC, conversion rates, and more. The goal is to uncover insights that can help optimize marketing strategies.
 
 ## Problem Statement
-With multiple campaigns, channels, and segments, it's challenging to pinpoint where to invest resources. Using SQL, we aim to:
-- Rank campaigns by impressions, ROI, or conversion rates.
-- Identify the most cost-effective campaigns and channels.
-- Highlight high-performing locations and target audiences.
+Marketing teams often struggle to identify which channels, locations, and customer segments yield the highest return on investment (ROI) and engagement. By analyzing the data, we aim to:
+- Understand campaign performance by type and channel.
+- Identify high-performing locations.
+- Pinpoint customer segments with higher conversion rates.
 
-## Dataset & Setup
-- **Dataset:** `marketing_campaign_dataset_cleaned.csv` (after Excel-based cleaning)  
-- **Data Cleaning (Excel):**  
-  - Removed “days” in the `Duration` column.  
-  - Stripped `$` and commas in `Acquisition_Cost` to ensure a numeric format.  
-  - Standardized the `Date` column for consistent date formats.  
-  - No missing values remained.  
-- **Database:** **PostgreSQL** for running SQL queries.
+## Dataset
+- **Raw File Name:** `marketing_campaign_dataset_csv` (Original dataset with “days” in Duration, `$` in Acquisition_Cost, etc.)
+- **File Name:** `marketing_campaign_dataset_cleaned.csv`
+- **Description:** Contains campaign information (Campaign_Type, Target_Audience, Duration, Channel_Used, Conversion_Rate, Acquisition_Cost, ROI, Clicks, Impressions, etc.).  
+- **Data Cleaning (Python):**  
+  - Removed “days” from `Duration`.  
+  - Stripped `$`/`,` from `Acquisition_Cost` and converted it to float.  
+  - Standardized `Date` column to a consistent format.  
+  - Created `CTR` = (Clicks / Impressions) * 100 and `CPC` = Acquisition_Cost / Clicks.  
+  - Verified no missing values remained.
 
-## SQL Tasks & Queries
-1. **Total Impressions** per campaign  
-2. **Highest ROI** campaign  
-3. **Top 3 Locations** by impressions  
-4. **Average Engagement Score** by target audience  
-5. **Overall CTR** (Click-Through Rate) across campaigns  
-6. **Most Cost-Effective Campaign** (lowest cost per conversion)  
-7. **Campaigns Exceeding** 5% CTR threshold  
-8. **Ranking Channels** by total conversions
+## EDA Steps
+1. **Data Loading & Inspection**  
+   - Reviewed dataset structure (`df.info()`) and descriptive stats (`df.describe()`).
+2. **Feature Engineering**  
+   - Added `CTR` and `CPC` to measure engagement and cost-efficiency.
+3. **Visualizations & Insights**  
+   - ROI distribution (boxplot).  
+   - CTR by channel (barplot).  
+   - Conversion rate by customer segment (barplot).  
+   - ROI across locations (line plot).
 
 ## Key Findings
-- **Variability** in campaign reach and impressions  
-- **Top-Performing Campaign** identified by highest ROI  
-- Certain **locations** excel in impressions, indicating strong regional performance  
-- **Cost-Effective** strategies uncovered via cost-per-conversion analysis  
-- Campaigns above **5% CTR** show high engagement potential
+- **High CTR** on certain channels (e.g., Search Engine).  
+- **Social Media** campaigns often yield the highest ROI.  
+- Certain **customer segments** show higher conversion rates.  
+- Locations like `Location_10` and `Location_6` exhibit above-average ROI.
 
-## Conclusion
-SQL queries in **PostgreSQL** revealed clear top performers in ROI and CTR, valuable geographic insights, and opportunities to optimize budget allocation. Focusing on cost-effective campaigns and high-CTR channels can significantly improve marketing outcomes.
+## Conclusion & Recommendations
+- **Invest more** in high-ROI channels (Social Media) and high-CTR channels (Search Engine).  
+- **Focus** on customer segments with higher conversion rates.  
+- **Tailor** campaigns to high-performing locations for greater impact.  
+- **Continuously monitor** CTR, CPC, and ROI to adapt to market changes.
 
 ## Files in This Folder
-- 'marketing_campaign_dataset.csv' (Raw dataset)
+- 'marketing_campaign_dataset_csv' (Raw Dataset)
 - `Marketing_campaign_dataset_cleaned.csv` (Cleaned dataset)
-- `Marketing_SQL_Analysis_Report.pdf` (Detailed SQL report)
-- `Marketing_SQL_Tasks.zip` (SQL scripts or queries)
-
-## Tools Used
-- **Excel**: for data cleaning (removing “days,” `$`, standardizing dates)  
-- **PostgreSQL**: for running SQL queries
+- `Marketing_Campaign_EDA_DebbyRise.pdf` (Detailed PDF report)
+- `Exploratory Data Analysis of Marketing Campaigns.pptx` (Presentation slides)
+  
+## Tools & Libraries
+- **Python**: Pandas, Matplotlib, Seaborn
+- **Jupyter Notebook** (or similar IDE)
 
 ## Author
 - **Muoghalu Chinedu Deborah**  
