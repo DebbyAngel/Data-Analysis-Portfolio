@@ -1,4 +1,4 @@
-# HNG Slack Workspace Exploratory & Predictive Analysis
+# HNG13 Slack Workspace Exploratory & Predictive Analysis
 
 ## Project Overview
 This project presents an exploratory and predictive analysis of engagement patterns within the HNG13 Slack workspace. Using daily activity metrics, engineered behavioral features, and machine learning, the analysis examines how participation evolves over time and identifies the key drivers of engagement across the cohort lifecycle.
