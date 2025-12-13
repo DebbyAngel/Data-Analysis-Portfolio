@@ -12,7 +12,7 @@ Marketing teams often struggle to identify which channels, locations, and custom
 ## Dataset & Files (Hosted on Google Drive)
 All files for this project—raw dataset, cleaned dataset, PDF report, and slides—are located in a shared Google Drive folder:
 
-[**Click here to access Project 2 files**](https://drive.google.com/drive/folders/1zKJYCz3NYhQ3TnGB6-PYnJOrZeBLpmR0?usp=sharing)
+[**Click here to access Project Files**](https://drive.google.com/drive/folders/1zKJYCz3NYhQ3TnGB6-PYnJOrZeBLpmR0?usp=sharing)
 
 Inside that folder, you'll find:
 - **marketing_campaign_dataset_csv** (Raw dataset)  
