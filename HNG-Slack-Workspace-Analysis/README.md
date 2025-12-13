@@ -31,7 +31,7 @@ Inside the folder, you’ll find:
 An interactive Power BI dashboard was built to complement the analysis and make insights easily accessible:
 
 **Power BI Dashboard:**  
-[Click here to view the interactive dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmY5ZDJkYzgtOWU2OC00ZmZjLWE1MjYtY2I0YWFjNDNiNGIwIiwidCI6IjQ1NjUyNTE0LTMwNjItNDFmZS05OTg2LTQ1MzA2YzRiNzBjNCJ9)
+[Click here to view the Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmY5ZDJkYzgtOWU2OC00ZmZjLWE1MjYtY2I0YWFjNDNiNGIwIiwidCI6IjQ1NjUyNTE0LTMwNjItNDFmZS05OTg2LTQ1MzA2YzRiNzBjNCJ9)
 
 ## Data Preparation
 - Cleaned and structured daily Slack activity data.
