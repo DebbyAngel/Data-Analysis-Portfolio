@@ -25,6 +25,7 @@ Inside the folder, you'll find:
 - **Cyclistic_Analysis_Report_2023.docx** — Full written analysis report
 - **Cyclistic_Analysis_2023.pptx** — Presentation slides
 - **Cyclistic_Colab_Notebook.pdf** — Python code, cleaning steps & visualizations
+- **Cyclistic_Analysis_Notebook.ipynb** — [Click here to view Python Notebook on Google Colab](https://colab.research.google.com/drive/1baf8G24LK1N5ePZyW2BfA6UXKwjqjI-g?usp=sharing)
 
 ## Data Source
 - **Provider:** Motivate International Inc. (Divvy Bikes, Chicago)
